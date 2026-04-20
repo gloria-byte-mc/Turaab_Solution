@@ -1,0 +1,141 @@
+.pcta-section {
+  background: #F5F7FA;
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+.pcta-section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(11, 60, 93, 0.04);
+  top: -100px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.pcta-section::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.04);
+  bottom: -80px;
+  right: -60px;
+  pointer-events: none;
+}
+
+*/
+
+.pcta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+}
+
+.pcta-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2E7D32;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.pcta-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: #0B3C5D;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.pcta-title span {
+  color: #1E88E5;
+  text-decoration: underline;
+  text-decoration-color: rgba(30, 136, 229, 0.35);
+  text-underline-offset: 6px;
+}
+
+.pcta-desc {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.85;
+  margin-bottom: 40px;
+}
+
+/* ── BUTTONS ── */
+.pcta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pcta-btn-primary {
+  background: #0B3C5D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.pcta-btn-primary:hover {
+  background: #1E88E5;
+  transform: translateY(-2px);
+}
+
+.pcta-btn-outline {
+  background: transparent;
+  color: #0B3C5D;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid rgba(11, 60, 93, 0.25);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.pcta-btn-outline:hover {
+  border-color: #0B3C5D;
+  background: rgba(11, 60, 93, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .pcta-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pcta-section {
+    padding: 60px 6%;
+  }
+
+  .pcta-title {
+    font-size: 26px;
+  }
+
+  .pcta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

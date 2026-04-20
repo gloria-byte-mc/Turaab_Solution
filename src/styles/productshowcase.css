@@ -1,0 +1,344 @@
+.showcase-section {
+  background: #F5F7FA;
+  padding: 100px 8%;
+}
+
+/* ── HEADER ── */
+.showcase-header {
+  margin-bottom: 64px;
+  max-width: 520px;
+}
+
+.showcase-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2E7D32;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 12px;
+}
+
+.label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2E7D32;
+  flex-shrink: 0;
+}
+
+.showcase-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: #0B3C5D;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.showcase-title span {
+  color: #1E88E5;
+}
+
+.showcase-subtitle {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.8;
+}
+
+/* ── MAIN LAYOUT ── */
+.showcase-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ── LEFT ── */
+.showcase-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.showcase-img-inner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(11, 60, 93, 0.18);
+  border: 1px solid rgba(11, 60, 93, 0.08);
+}
+
+.showcase-carousel-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.showcase-carousel-img.active {
+  opacity: 1;
+}
+
+/* ── FLOATING BADGE ── */
+.showcase-float-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(11, 60, 93, 0.15);
+  border: 1px solid rgba(11, 60, 93, 0.08);
+}
+
+.badge-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.badge-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0B3C5D;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.badge-sub {
+  font-size: 11px;
+  color: #888888;
+}
+
+/* ── DOTS ── */
+.showcase-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.showcase-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(11, 60, 93, 0.20);
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+  padding: 0;
+}
+
+.dot-active {
+  background: #0B3C5D;
+  transform: scale(1.3);
+}
+
+/* ── RIGHT ── */
+.showcase-right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.showcase-brand {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1E88E5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.showcase-product-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #0B3C5D;
+  line-height: 1.25;
+}
+
+.showcase-product-title span {
+  color: #1E88E5;
+}
+
+.showcase-desc {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.85;
+  max-width: 480px;
+}
+
+/* ── SPECS ── */
+.showcase-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.showcase-spec-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(11, 60, 93, 0.08);
+  box-shadow: 0 2px 8px rgba(11, 60, 93, 0.05);
+}
+
+.spec-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.spec-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0B3C5D;
+}
+
+/* ── TAGS ── */
+.showcase-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.showcase-tag {
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tag-green {
+  background: rgba(46, 125, 50, 0.08);
+  border: 1.5px solid rgba(46, 125, 50, 0.35);
+  color: #2E7D32;
+}
+
+.tag-outline2 {
+  background: transparent;
+  border: 1.5px solid rgba(11, 60, 93, 0.20);
+  color: #0B3C5D;
+}
+
+/* ── CTA ── */
+.showcase-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.showcase-btn-primary {
+  background: #0B3C5D;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.showcase-btn-primary:hover {
+  background: #1E88E5;
+  transform: translateY(-2px);
+}
+
+.showcase-btn-outline {
+  background: transparent;
+  color: #0B3C5D;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1.5px solid rgba(11, 60, 93, 0.25);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.showcase-btn-outline:hover {
+  border-color: #0B3C5D;
+  transform: translateY(-2px);
+}
+
+/* ── SCROLL ANIMATIONS ── */
+.showcase-animate-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.showcase-animate-up {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.30s; }
+.delay-3 { transition-delay: 0.45s; }
+.delay-4 { transition-delay: 0.60s; }
+.delay-5 { transition-delay: 0.75s; }
+
+.showcase-visible .showcase-animate-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.showcase-visible .showcase-animate-up {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 968px) {
+  .showcase-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .showcase-title {
+    font-size: 30px;
+  }
+
+  .showcase-product-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-section {
+    padding: 60px 6%;
+  }
+
+  .showcase-product-title {
+    font-size: 22px;
+  }
+
+  .showcase-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-cta {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,170 @@
+.partners-section {
+  background: #F5F7FA;
+  padding: 100px 8%;
+}
+
+/* ── HEADER ── */
+.partners-header {
+  margin-bottom: 48px;
+}
+
+.partners-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2E7D32;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 14px;
+}
+
+.label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2E7D32;
+  flex-shrink: 0;
+}
+
+.partners-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: #0B3C5D;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.partners-title span {
+  color: #1E88E5;
+}
+
+.partners-subtitle {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* ── GRID ── */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* ── CARD ── */
+.partner-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid rgba(11, 60, 93, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(11, 60, 93, 0.09);
+}
+
+/* ── INITIAL ── */
+.partner-initial {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0B3C5D;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── INFO ── */
+.partner-info {
+  flex: 1;
+}
+
+.partner-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0B3C5D;
+  margin-bottom: 6px;
+}
+
+.partner-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.partner-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-icon {
+  color: #1E88E5;
+  font-size: 11px;
+}
+
+.partner-dot {
+  color: #cccccc;
+}
+
+.partner-type {
+  color: #888888;
+}
+
+/* ── CHECK ICON ── */
+.partner-check {
+  color: #2E7D32;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ── SCROLL ANIMATIONS ── */
+.partners-animate-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.partners-visible .partners-animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section {
+    padding: 60px 6%;
+  }
+
+  .partners-title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,199 @@
+.accred-section {
+  position: relative;
+  padding: 100px 8%;
+  background-image: url('/images/accreditation-image.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.accred-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.85) 80%,
+    rgba(11, 60, 93, 0.20) 100%
+  );
+  z-index: 0;
+}
+
+.accred-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── HEADER ── */
+.accred-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.accred-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #81C784;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.accred-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.accred-title span {
+  color: #64B5F6;
+}
+
+.accred-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.60);
+  line-height: 1.8;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── GRID ── */
+.accred-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ── CARD ── */
+.accred-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.accred-card:hover {
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateY(-6px);
+}
+
+.accred-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.15);
+  border: 1.5px solid rgba(46, 125, 50, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.accred-icon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accred-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.accred-card-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.60);
+  line-height: 1.75;
+}
+
+/* ── SCROLL ANIMATIONS ── */
+.accred-animate-up {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accred-visible .accred-animate-up {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.accred-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.accred-icon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── ICON COLORS ── */
+.icon-green {
+  background: rgba(46, 125, 50, 0.15);
+  border: 1.5px solid rgba(46, 125, 50, 0.35);
+  color: #81C784;
+}
+
+.icon-red {
+  background: rgba(211, 47, 47, 0.15);
+  border: 1.5px solid rgba(211, 47, 47, 0.35);
+  color: #EF9A9A;
+}
+
+.icon-yellow {
+  background: rgba(245, 127, 23, 0.15);
+  border: 1.5px solid rgba(245, 127, 23, 0.35);
+  color: #FFCC80;
+}
+
+.icon-blue {
+  background: rgba(30, 136, 229, 0.15);
+  border: 1.5px solid rgba(30, 136, 229, 0.35);
+  color: #64B5F6;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 968px) {
+  .accred-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .accred-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accred-section {
+    padding: 60px 6%;
+    background-attachment: scroll;
+  }
+
+  .accred-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accred-title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.schools-section {
+  background: #ffffff;
+  padding: 80px 8%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.schools-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.schools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 32px;
+}
+
+.school-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.school-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22A656;
+  flex-shrink: 0;
+}
+
+.school-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .schools-section {
+    padding: 36px 6%;
+  }
+
+  .school-name {
+    font-size: 13px;
+  }
+
+  .schools-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schools-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+}

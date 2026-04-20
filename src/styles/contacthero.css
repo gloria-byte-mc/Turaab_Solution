@@ -1,0 +1,105 @@
+.contact-hero-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.contact-hero {
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+  background-image: url('/images/students-learning.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.75) 40%,
+    rgba(11, 60, 93, 0.40) 100%
+  );
+  z-index: 0;
+}
+
+/* ── CONTENT ── */
+.contact-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 160px 8% 80px;
+  max-width:900px;
+}
+
+.contact-hero-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #81C784;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.contact-hero-title span {
+  color: #64B5F6;
+}
+
+.contact-hero-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.85;
+  max-width: 520px;
+}
+
+/* ── ANIMATIONS ── */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(36px);
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.45s; }
+.delay-3 { animation-delay: 0.65s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .contact-hero-title {
+    font-size: 38px;
+  }
+
+  .contact-hero-content {
+    padding: 130px 6% 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-title {
+    font-size: 30px;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 15px;
+  }
+}
