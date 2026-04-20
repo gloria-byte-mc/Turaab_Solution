@@ -197,3 +197,12 @@
     font-size: 26px;
   }
 }
+
+@media screen and (min-width:1440px) {
+   .accred-section{
+    padding: 160px 8%;
+   }
+   .accred-label{
+    margin-bottom: 16px;
+   }
+}

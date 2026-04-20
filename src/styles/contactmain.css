@@ -271,3 +271,9 @@
     padding: 24px;
   }
 }
+
+@media screen and (min-width:1440px) {
+  .cmain-section{
+    padding: 160px 8%;
+  }
+}
