@@ -14,6 +14,7 @@ html, body {
   padding: 80px 8%;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  overflow: hidden;
 }
 
 .schools-title {
@@ -21,21 +22,61 @@ html, body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0 8%;
 }
 
-.schools-list {
+/* ── CAROUSEL WRAP ── */
+.schools-carousel-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* fade edges */
+.schools-carousel-wrap::before,
+.schools-carousel-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.schools-carousel-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.schools-carousel-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+/* ── TRACK ── */
+.schools-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px 32px;
+  gap: 40px;
+  animation: scrollSchools 14s linear infinite;
+  width: max-content;
 }
 
+.schools-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollSchools {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── ITEM ── */
 .school-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .school-dot {
@@ -54,25 +95,37 @@ html, body {
   white-space: nowrap;
 }
 
+.school-logo-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #0B3C5D;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+.school-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  .schools-section {
-    padding: 36px 6%;
+  .schools-title {
+    font-size: 17px;
   }
 
   .school-name {
     font-size: 13px;
-  }
-
-  .schools-title {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 480px) {
-  .schools-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
   }
 }

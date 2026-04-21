@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import '../styles/about.css'
 import { useNavigate } from 'react-router-dom'
+import { FaCheckCircle } from 'react-icons/fa'
 
 const features = [
   'KICD-Approved Calculators',
@@ -77,7 +78,7 @@ useEffect(() => {
           <ul className="about-features">
             {features.map((f, i) => (
               <li key={i} className="about-feature-item" style={{ animationDelay: `${0.4 + i * 0.1}s` }}>
-                <span className="feature-icon">✔</span>
+                <span className="feature-icon"><FaCheckCircle /></span>
                 {f}
               </li>
             ))}
