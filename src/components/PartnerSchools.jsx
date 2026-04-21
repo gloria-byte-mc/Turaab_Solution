@@ -3,12 +3,12 @@ import '../styles/partnerschools.css'
 import { FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa'
 
 const schools = [
-  { name: 'Moi Airbase School', location: 'Nairobi', type: 'Primary & Secondary' },
-  { name: 'Nairobi South School', location: 'Nairobi', type: 'Secondary School' },
-  { name: 'Apex Girls Secondary School', location: 'Nairobi', type: 'Girls Secondary' },
-  { name: 'Rapani Group of Schools', location: 'Nairobi', type: 'Group of Schools' },
-  { name: 'Garissa High School', location: 'Garissa', type: 'Secondary School' },
-  { name: 'Manara School', location: 'Garissa', type: 'Secondary School' },
+  { name: 'Moi Airbase School', location: 'Nairobi', type: 'Primary & Secondary', logo: '/images/moi.png' },
+  { name: 'Nairobi South School', location: 'Nairobi', type: 'Secondary School', logo: '/images/nairobi.png' },
+  { name: 'Apex Girls Secondary School', location: 'Nairobi', type: 'Girls Secondary', logo: '/images/apex.png' },
+  { name: 'Rapani Group of Schools', location: 'Nairobi', type: 'Group of Schools', logo: '/images/rapani.png' },
+  { name: 'Garissa High School', location: 'Garissa', type: 'Secondary School', logo: '/images/garissa.png' },
+  { name: 'Manara School', location: 'Garissa', type: 'Secondary School', logo: '/images/manara.png' },
 ]
 
 const PartnerSchools = () => {
@@ -55,7 +55,9 @@ const PartnerSchools = () => {
             key={i}
             style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
           >
-            <div className="partner-initial">{school.name.charAt(0)}</div>
+            <div className="partner-initial">
+  <img src={school.logo} alt={school.name} />
+</div>
             <div className="partner-info">
               <h3 className="partner-name">{school.name}</h3>
               <div className="partner-meta">
