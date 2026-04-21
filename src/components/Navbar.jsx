@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom' 
 import '../styles/navbar.css'
 
 const Navbar = () => {
@@ -19,12 +19,10 @@ const Navbar = () => {
      <Link to="/" className="logo">Turaab Solutions</Link>
 
       <ul className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
-         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-        <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-
-        {/* ── Section links stay as <a> ── */}
-        <li><Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link></li>
-         <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+         <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+        <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
+        <li><NavLink to="/products" onClick={() => setMenuOpen(false)}>Products</NavLink></li>
+        <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
       </ul>
 
       <a className="btn nav-btn" href="#contact">Request Quote</a>

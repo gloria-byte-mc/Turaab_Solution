@@ -133,6 +133,8 @@ html, body {
   white-space: nowrap;
 }
 
+
+
 /* ── HAMBURGER ── */
 .hamburger {
   display: none;
@@ -162,6 +164,25 @@ html, body {
 
 .hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── ACTIVE LINK ── */
+.navbar-transparent .nav-links a.active {
+  color: #64B5F6;  /* ← light blue on transparent navbar */
+}
+
+.navbar-scrolled .nav-links a.active {
+  color: var(--blue);  /* ← blue on white navbar */
+  font-weight: 600;
+}
+
+/* ── ACTIVE LINK MOBILE ── */
+@media (max-width: 768px) {
+  .nav-links a.active {
+    color: #ffffff !important;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 
 /* ── MOBILE ── */
