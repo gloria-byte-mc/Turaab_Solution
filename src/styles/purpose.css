@@ -326,3 +326,9 @@ margin-bottom: 1rem;
     display: none;
   }
 }
+
+@media screen and (min-width:1440px) {
+  .purpose-section{
+    padding: 200px 8%;
+  }
+}
