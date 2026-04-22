@@ -51,7 +51,7 @@ html, body {
   text-align: right;
 }
 
-/* ── LIST ── */
+
 .why-list {
   display: flex;
   flex-direction: column;
