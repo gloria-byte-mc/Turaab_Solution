@@ -53,7 +53,7 @@ const WhoWeAre = () => {
         {/* ── RIGHT IMAGE ── */}
         <div className="whoweare-right whoweare-animate-right">
           <div className="whoweare-img-main">
-            <img src="/images/turaab-workers.png" alt="Turaab Solutions" />
+            <img src="/images/turaabBanner3.jpg" alt="Turaab Solutions" />
           </div>
           <div className="whoweare-img-small">
             <img src="/images/calculator3.jpeg" alt="Students learning" />

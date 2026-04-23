@@ -47,7 +47,7 @@ useEffect(() => {
         {/* ── LEFT: Image collage ── */}
         <div className="about-images about-animate-left">
           <div className="about-img-main">
-            <img src="/images/turaab-company.png" alt="Students using calculators" />
+            <img src="/images/turaabBanner2.jpg" alt="Students using calculators" />
           </div>
           <div className="about-img-small">
             <img src="/images/calculator-brand-name.jpeg" alt="School supplies" />
