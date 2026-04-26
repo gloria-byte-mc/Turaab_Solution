@@ -10,7 +10,7 @@ const tags = [
 ]
 
 const specs = [
-  { label: 'Brand', value: 'CT PLUS' },
+  { label: 'Brand', value: 'C.T. PLUS' },
   { label: 'Model', value: 'SX-991MS' },
   { label: 'Power', value: 'Solar + Battery' },
   { label: 'Approval', value: 'KICD Certified' },
@@ -130,7 +130,7 @@ const ProductShowcase = () => {
 
           {/* Product name */}
           <div className="showcase-animate-up delay-1">
-            <p className="showcase-brand">CT PLUS</p>
+            <p className="showcase-brand">C.T. PLUS</p>
             <h3 className="showcase-product-title">
               SX-991MS Scientific <span>Calculator</span>
             </h3>

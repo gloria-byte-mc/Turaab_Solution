@@ -117,7 +117,7 @@ const Products = () => {
         {/* ── RIGHT: Info ── */}
         <div className="product-info">
           <h3 className="product-title product-animate-up delay-1">
-            CT PLUS SX-991MS Scientific Calculator
+            C.T. PLUS SX-991MS Scientific Calculator
           </h3>
           <p className="product-desc product-animate-up delay-2">
             Our flagship product — a feature-rich scientific calculator designed for
