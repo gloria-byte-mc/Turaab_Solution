@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4 className="footer-col-title">Products</h4>
           <ul className="footer-links">
-            <li><a href="#product">CT PLUS SX-991MS</a></li>
+            <li><a href="#product">C.T. PLUS SX-991MS</a></li>
             <li><a href="#product">KICD Approved</a></li>
             <li><a href="#product">Non-Programmable</a></li>
             <li><a href="#product">Solar + Battery</a></li>
