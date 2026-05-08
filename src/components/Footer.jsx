@@ -86,13 +86,16 @@ const Footer = () => {
 
       {/* ── BOTTOM BAR ── */}
       <div className="footer-bottom">
-        <p className="footer-copy">
-          © {new Date().getFullYear()} Turaab Solutions. All rights reserved.
-        </p>
-        <p className="footer-credit">
-          KICD Approved · Non-Programmable · Kenya
-        </p>
-      </div>
+  <p className="footer-copy">
+    © {new Date().getFullYear()} Turaab Solutions. All rights reserved.
+  </p>
+  <p className="footer-credit">
+    KICD Approved · Non-Programmable · Kenya
+  </p>
+  <p className="footer-copy">
+    Powered by <a href="https://nakkei.com/" target="_blank" rel="noreferrer" className="footer-nakkei">Nakkei</a>
+  </p>
+</div>
 
     </footer>
   )

@@ -149,6 +149,16 @@ html, body {
   letter-spacing: 0.04em;
 }
 
+.footer-nakkei {
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: underline;
+  transition: color 0.25s ease;
+}
+
+.footer-nakkei:hover {
+  color: #64B5F6;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 968px) {
   .footer-top {
